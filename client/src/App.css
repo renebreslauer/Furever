@@ -1,0 +1,372 @@
+/* NAV STYLE */
+
+.nav-item {
+  list-style-type: none;
+}
+
+.navbar {
+  background: #79cbb9;
+  z-index: 1;
+}
+
+.nav-link {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.nav-link:hover {
+  color: #51877a;
+  text-decoration: none;
+}
+
+.nav-link a {
+  color: white;
+}
+
+.dropdown-menu.show {
+  background-color: #79cbb9;
+  border: none;
+}
+
+.dropdowm-menu.show:hover {
+  background-color: #79cbb9;
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
+.dropdown-menu a:hover {
+  color: #51877a;
+  background-color: #79cbb9;
+}
+
+.dropdown-item a {
+  padding: 0px;
+}
+
+.logo {
+  width: 200px;
+  margin-left: 20px;
+}
+
+.logo:hover {
+  content: url('./Images/logo_alternate.svg');
+}
+
+/* BANNER STYLE */
+.banner-container {
+  margin: 0px;
+  padding: 0px;
+}
+.banner-image {
+  max-height: 200px;
+  margin-top: 20px;
+  background: none;
+}
+
+#call-to-action {
+  font-family: 'Patua One', cursive;
+  color: #f26143;
+  margin-top: 0;
+  margin-left: 200px;
+  text-align: left;
+  z-index: 1;
+  padding-top: 50px;
+}
+
+#call-to-action h1 {
+  font-size: 3rem;
+}
+
+.btn-primary.btn-lg {
+  margin-top: 30px;
+  background: none;
+  padding: 0px;
+  border: none;
+}
+.btn-primary.btn-lg a {
+  font-family: 'Patua One', cursive;
+
+  padding: 10px;
+  color: #f26143;
+  background-color: white;
+  border: 6px solid #f26143;
+  border-radius: 10px;
+}
+
+.btn-primary.btn-lg a:hover {
+  padding: 10px;
+  color: white;
+  background-color: #f26143;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* CAROUSEL STYLE */
+
+#carousel-div {
+  display: flex;
+  background-color: #f9d01e;
+  justify-content: center;
+  margin-top: -70px;
+}
+
+.carousel {
+  max-width: 1000px;
+  padding: 80px;
+}
+
+/* ANIMAL PAGE STYLE */
+
+.animal-page-container {
+  background-color: white;
+}
+
+.animal-page-banner {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+/* CARDS STYLE */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.card {
+  font-family: 'Oswald', sans-serif;
+  background-color: white;
+  box-shadow: 0 30px 70px -12px rgba(0, 0, 0, 0.25);
+  width: 250px;
+  height: 400px;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 30px 70px -12px #79cbb9;
+}
+
+.card-header {
+  font-family: 'Patua One', cursive;
+  font-size: 20px;
+  color: #f26143;
+  text-align: center;
+  background-color: white;
+  height: 50px;
+}
+
+.card-header:first-child {
+  border-radius: 20px 20px 0px 0px;
+  border: none;
+}
+
+.card-img {
+  width: 230px;
+  height: 200px;
+  border-radius: 0;
+}
+.card-body {
+  width: 250px;
+  padding: 1px;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  margin-bottom: -20px;
+}
+
+.card-text {
+  font-size: 0.7rem;
+  text-align: justify;
+}
+.card-footer {
+  border: none;
+  background: none;
+}
+
+/* BUTTONBAR STYLING */
+
+.btn-primary {
+  font-family: 'Oswald', sans-serif;
+  margin: 2px;
+  background-color: #f48478;
+  border: none;
+}
+
+.btn-primary:hover {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f26143;
+}
+
+/* ABOUT ME STYLING */
+
+.team-member-container {
+  display: flex;
+}
+
+.team-member-container .h1 {
+}
+
+.team-member-container .p {
+  font-size: 3rem;
+}
+
+.flip-card {
+  margin-top: 50px;
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  border: none;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: none;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: none;
+  color: #f26143;
+  transform: rotateY(180deg);
+}
+.flip-card-back > h1 {
+  font-family: 'Patua One', cursive;
+
+  padding: 10px;
+}
+
+.flip-card-back > p {
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+  text-align: justify;
+}
+
+.flip-container {
+  display: flex;
+  justify-content: center;
+}
+
+.team-member-image {
+  width: 200px;
+  border-radius: 200%;
+}
+
+.pets-image {
+  width: 200px;
+  border-radius: 200%;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.about-title {
+  font-family: 'Patua One', cursive;
+  font-size: 4rem;
+  margin-top: 40px;
+  color: #f26143;
+}
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.loading {
+  font-family: 'Patua One', cursive;
+  font-size: 4rem;
+  margin-top: 40px;
+  color: #f26143;
+}
+
+/* PET DETAILS */
+
+.petDetailsContainer {
+  display: flex;
+  display: center;
+  background-color: #fdc793;
+  margin: 50px;
+  border-radius: 100px;
+  height: 500px;
+}
+.petName {
+  font-family: 'Patua One', cursive;
+  color: white;
+}
+.InfoCard {
+  font-family: 'Oswald', sans-serif;
+  color: #aa4433;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 1.1rem;
+}
+
+.InfoCard a {
+  color: #f26143;
+}
+.petCarousel {
+  width: 500px;
+  height: 500px;
+}
+.carouselPic {
+  max-height: 300px;
+}
+#loader {
+  width: 100px;
+  animation: spin;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
